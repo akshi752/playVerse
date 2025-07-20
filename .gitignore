@@ -1,0 +1,17 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore node modules (if added later)
+node_modules/
+
+# Ignore build files if used
+dist/
+build/
+
+# Ignore Vercel CLI settings (if configured)
+.vercel/
+
+# Ignore logs or environment files
+*.log
+.env

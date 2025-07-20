@@ -1,0 +1,622 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #0f2027;
+  color: white;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  background: #0f2027;
+  z-index: 100;
+  gap: 20px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  margin-right: 10px;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.nav-bar a {
+  position: relative;
+  filter: drop-shadow(0 0 0.625rem #00ffcc);
+  font-size: large;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  margin: 20px 10px;
+  padding: 10px 30px;
+  border: 4px solid #00ffcc;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+}
+
+.nav-bar a:hover {
+  border: none;
+}
+
+.nav-bar a::after {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  left: 25%;
+  height: 3px;
+  width: 0;
+  background-color: #00ffcc;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+.nav-bar a:hover::after {
+  width: 50%;
+}
+
+.heading-robo {
+  width: 100%;
+  display: flex;
+  height: 300px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.robo {
+  background: #0f2027;
+
+  height: 150px;
+  width: 200px;
+  border-radius: 40%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 22px #00e7ff;
+  align-items: center;
+}
+.head {
+  height: 30px;
+  width: 20px;
+  background-color: #337ab7;
+}
+.face {
+  height: 90px;
+  width: 80%;
+  background-color: #337ab7;
+  border-radius: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eyes {
+  background-color: #1f4169;
+  height: 50px;
+  width: 80%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+.eye {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: #00eaff;
+}
+
+.robo:hover .smile {
+  height: 10px;
+  width: 60px;
+
+  border-bottom: 10px solid #00eaff;
+}
+.robo:hover .eye {
+  width: 32px;
+  height: 16px;
+  background-color: #00eaff;
+  border-radius: 0;
+}
+.heading {
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+  gap: 30px;
+}
+.header {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#welcome {
+  font-size: 4rem;
+  letter-spacing: 8px;
+}
+#to {
+  margin-left: 150px;
+  font-size: 2rem;
+  letter-spacing: 4px;
+}
+#playverse {
+  font-size: 4.2rem;
+  letter-spacing: 6px;
+}
+.animate {
+  width: fit-content;
+  display: flex;
+}
+.animate span {
+  display: inline-block;
+  transform: rotateY(0deg);
+  transition: 0.5s;
+  animation: bounce 2s ease infinite alternate;
+  position: relative;
+}
+.animate span:nth-child(1) {
+  animation-delay: 0s;
+}
+.animate span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.animate span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.animate span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.animate span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.animate span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.animate span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.animate span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.animate span:nth-child(9) {
+  animation-delay: 0.8s;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    top: 0;
+  }
+
+  50% {
+    top: -20px;
+    text-shadow: 0 1px 0 #00ffcc, 0 2px 0 #00ffcc, 0 3px 0 #00ffcc,
+      0 4px 0 #00ffcc, 0 5px 0 #00ffcc, 0 6px 0 #00ffcc, 0 7px 0 #00ffcc,
+      0 8px 0 #00ffcc;
+  }
+  70% {
+    top: -10px;
+    text-shadow: 0 1px 0 #00ffcc, 0 2px 0 #00ffcc, 0 3px 0 #00ffcc,
+      0 4px 0 #00ffcc, 0 5px 0 #00ffcc, 0 6px 0 #00ffcc, 0 7px 0 #00ffcc,
+      0 8px 0 #00ffcc;
+  }
+}
+h1 {
+  font-size: 54px;
+  animation: glowUp 2s ease infinite alternate;
+}
+
+@keyframes glowUp {
+  from {
+    text-shadow: 0 0 6px #00ffcc;
+  }
+  to {
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+hr {
+  width: 4px;
+  border-radius: 20px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.trail {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #00ffcc;
+  box-shadow: 0 0 8px #00ffcc;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.about p {
+  font-size: 18px;
+  margin-top: 0;
+  padding: 30px 200px;
+  line-height: 28px;
+}
+.space {
+  margin-top: 350px;
+}
+.card {
+  height: 400px;
+  width: 500px;
+  border-radius: 40px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  transition: all 0.3s ease;
+}
+
+.row {
+  padding: 20px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 460px;
+  border-radius: 0 0 40px 40px;
+}
+
+.shrink {
+  height: 400px;
+  width: 110px;
+  border-radius: 40px;
+  background-color: rgb(5, 99, 99);
+  box-shadow: 0 0 20px cyan;
+  transition: all 0.3s ease;
+}
+.designers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.designh2 {
+  font-size: 30px;
+  font-weight: 900;
+
+  color: white;
+}
+
+.designp {
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 800;
+  color: white;
+}
+
+.games {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+}
+.game-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.simon {
+  background-image: url("./assets/simon.jpg");
+  background-size: cover;
+}
+.tic {
+  background-image: url("./assets/tic.jpg");
+  background-size: cover;
+}
+.sudoku {
+  background-image: url("./assets/sudoku.jpg");
+  background-size: cover;
+}
+.hang {
+  background-image: url("./assets/hangm.jpg");
+  background-size: cover;
+}
+.chess {
+  background-image: url("./assets/chess.jpg");
+  background-size: cover;
+}
+
+.member {
+  margin: 6px;
+  height: 250px;
+  width: 250px;
+  transform: rotate(45deg);
+  background-color: aqua;
+  border-radius: 20px;
+  background-color: rgba(245, 245, 245, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease-in;
+}
+.member h3 {
+  font-size: 34px;
+  transform: rotate(-45deg);
+}
+.member3 h3 {
+  margin-left: 60px;
+  margin-top: 0;
+}
+.member4 {
+  display: none;
+}
+.team {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+.sub {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+.member1:hover {
+  background-image: url("./assets/member1.png");
+  background-size: cover;
+
+  transform: rotate(-0deg);
+  h3 {
+    opacity: 0;
+  }
+}
+.member4:hover {
+  background-image: url("./assets/member1.png");
+  background-size: cover;
+
+  transform: rotate(-0deg);
+  h3 {
+    opacity: 0;
+  }
+}
+.member3:hover {
+  background-image: url("./assets/member3.png");
+  background-size: cover;
+
+  transform: rotate(-0deg);
+  h3 {
+    opacity: 0;
+  }
+}
+.member2:hover {
+  background-image: url("./assets/member2.png");
+  background-size: cover;
+
+  transform: rotate(-0deg);
+  h3 {
+    opacity: 0;
+  }
+}
+.footer {
+  margin: 2px;
+  margin-top: 100px;
+  border-radius: 70px 70px 0 0;
+  height: 300px;
+  width: 100%;
+  background-color: #032c30;
+  box-shadow: 0 0 20px #00ffcc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  height: 250px;
+}
+
+.connect i {
+  font-size: 18px;
+  color: white;
+  margin: 10px;
+}
+.connect  i:hover {
+  font-size: 24px;
+}
+
+.equal {
+  margin: 12px 50px;
+  height: 200px;
+  width: 300px;
+}
+.contact {
+  line-height: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.contact a {
+  text-decoration: none;
+  color: white;
+}
+.contact a:hover {
+  text-decoration: 2px solid underline white;
+}
+.logo {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #00ffcc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  animation: move 3s infinite ease-in-out;
+}
+@keyframes move {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@media (max-width: 705px) {
+  .logo {
+    display: none;
+  }
+  .footer {
+    height: 550px;
+  }
+  .text {
+    height: 350px;
+  }
+}
+@media (max-width: 770px) {
+  .team {
+    margin-top: 200px;
+  }
+  .member1 {
+    display: none;
+  }
+  .member4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .designers {
+    margin-bottom: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+  .sub {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .games h2 {
+    margin-left: 15px;
+    font-size: 12px;
+  }
+  .games {
+    flex-direction: column;
+    align-items: center;
+  }
+  .shrink {
+    height: 50px;
+    width: 100px;
+  }
+  .card {
+    height: 400px;
+    width: 300px;
+  }
+  .row {
+    width: 260px;
+    height: 200px;
+  }
+  .heading-robo {
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .about {
+    margin-top: 300px;
+  }
+  .about p {
+    padding: 0 20px;
+    margin: 30px;
+  }
+  .playverse {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    padding-top: 20px;
+    background: transparent;
+  }
+
+  .nav-bar a {
+    display: none; /* Hide initially */
+  }
+
+  .nav-bar.show a {
+    display: inline-block;
+    animation: fadeInUp 1s ease;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+}
+
+@media (max-width: 790px) {
+  .footer {
+    height: 450px;
+  }
+  .text {
+    height: 350px;
+    flex-wrap: wrap;
+  }
+}
+#scrollUp {
+  border:none;
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  color: cyan;
+  box-shadow: 0 0 10px cyan;
+  background:transparent;
+  border-radius: 50%;
+  font-size: 54px;
+  font-weight: 500;
+}
+.games a{
+    text-decoration: none;
+    color:white;
+    text-align: center;
+   
+}

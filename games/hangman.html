@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HangMan</title>
+    <link rel="stylesheet" href="hangman.css">
+    <link rel="shortcut icon" href="../assets/hangm.jpg">
+</head>
+<body>
+    <nav class="nav">
+       <div class="navhead">
+        <h2>Welcome to HangMan Game</h2>
+       </div>
+    </nav>
+    <div class="containergame">
+        <div class="leftdiv">
+            <div class="image">
+                 <img src="hangman-0.svg" alt="images" id="img0">
+                 <img src="hangman-1.svg" alt="images" id="img1">
+                 <img src="hangman-2.svg" alt="images" id="img2">
+                 <img src="hangman-3.svg" alt="images" id="img3">
+                 <img src="hangman-4.svg" alt="images" id="img4">
+                 <img src="hangman-5.svg" alt="images" id="img5">
+                 <img src="hangman-6.svg" alt="images" id="img6">
+            </div>
+            <div class="heading">
+                <h1>WELCOME TO HANGMAN GAME</h1>
+            </div>
+        </div>
+        <div class="rightdiv">
+            <div class="guess">
+              <p id="guessword">_ _ _ _ _</p>
+            </div>
+            <div class="hint">
+               <h4>Hint:</h4>
+               <p id="hintpara">Lorem ipsum dolor sit amet.
+               </p>
+            </div>
+            <div class="incorrectguess">
+            <p id="wrongguess">Wrong guesses: 0/6</p>
+            </div>
+            <div class="keyboard">
+              <div class="row1">
+                 <div class="alphabets" id="A">A</div>
+               <div class="alphabets" id="B">B</div>
+               <div class="alphabets" id="C">C</div>
+               <div class="alphabets" id="D">D</div>
+               <div class="alphabets" id="E">E</div>
+               <div class="alphabets" id="F">F</div>
+               <div class="alphabets" id="G">G</div>
+               <div class="alphabets" id="H">H</div>
+               <div class="alphabets" id="I">I</div>
+              </div>
+               <div class="row2">
+                <div class="alphabets" id="J">J</div>
+               <div class="alphabets" id="K">K</div>
+               <div class="alphabets" id="L">L</div>
+               <div class="alphabets" id="M">M</div>
+               <div class="alphabets" id="N">N</div>
+               <div class="alphabets" id="O">O</div>
+               <div class="alphabets" id="P">P</div>
+               <div class="alphabets" id="Q">Q</div>
+               <div class="alphabets" id="R">R</div>
+               </div>
+               <div class="row3">
+                <div class="alphabets" id="S">S</div>
+               <div class="alphabets" id="T">T</div>
+               <div class="alphabets" id="U">U</div>
+               <div class="alphabets" id="V">V</div>
+               <div class="alphabets" id="W">W</div>
+               <div class="alphabets" id="X">X</div>
+               <div class="alphabets" id="Y">Y</div>
+               <div class="alphabets" id="Z">Z</div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <script src="hangman.js"></script>
+</body>
+</html>

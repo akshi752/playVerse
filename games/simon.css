@@ -1,0 +1,40 @@
+body{
+   text-align:center; 
+   background-color:aquamarine;
+   color:black;
+   text-shadow: 0 0 10px  cyan;
+}
+.btn-container{
+    display:flex;
+    justify-content: center;
+}
+.btn{
+    height:200px;
+    width:200px;
+    border:10px solid black;
+    border-radius:20%;
+    margin:2.5rem;
+}
+.yellow{
+background-color: #f99b45;
+}
+.red{
+background-color: #d95980;
+}
+.purple{
+background-color: #819ff9;
+}
+.green{
+background-color: #63aac0;
+}
+.flash{
+    background-color: white;
+}
+@media(max-width:560px){
+    .btn{
+        height:100px;
+        width:100px;
+        margin:1.5rem;
+    }
+   
+}
