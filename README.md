@@ -39,7 +39,7 @@ It features an original landing page with simple animations, and links to differ
 
 The project is deployed using **GitHub + Vercel**.  
 Visit the live site here:  
-🔗 [https://playverse.vercel.app](https://playverse.vercel.app)
+🔗 [https://play-verse-iota.vercel.app/]
 
 ---
 
@@ -58,8 +58,8 @@ Visit the live site here:
  
 playVerse/
 │
-├── index.html # Landing page
-├── preloader.html # Preloader
+├── index.html # Preloader
+├── index2.html # Landing page
 ├── style.css # Global styles
 ├── app.js # Global JavaScript
 ├── .gitignore
