@@ -23,23 +23,24 @@ h1{
     margin-top:5vh;
     justify-content: space-around;
     height:100%;
-    width:70vw;
+    width:70%;
 }
 .board{
     display: flex;
     flex-wrap: wrap;
-    height:50%;
+    height:50vmin;
     aspect-ratio: 1/1;
     width:auto;
     background-color: aqua;
 }
-@media (max-aspect-ratio:1/1){
+/* @media (max-aspect-ratio:1/1){
     .board{
-        width:90%;
+        width:70%;
         aspect-ratio: 1/1;
         height:auto;
+     
     }
-}
+} */
 
 .box{
     width:11.11%;
@@ -82,14 +83,14 @@ h1{
     width:60% ;
     height:15%;
     background-color: red;
-    font-size: 2rem;
+    font-size: 5vmin;
     border-radius: 5%;
 }
 #ans{
     width:60%;
     height: 15%;
     background-color: aquamarine;
-    font-size: 2rem;
+    font-size: 5vmin;
     border-radius: 5%;
 }
 #playbtn:hover,#ans:hover{
@@ -99,5 +100,5 @@ h1{
     transition-duration: 0.1s;
 }
 .hide{
-    display:none;
+    display: none;
 }

@@ -29,12 +29,6 @@ body
 nav ul
 {
     list-style: none;
-} @media screen and (max-width:357px) {
-    .navhead
-    {
-        font-size: 17px;
-    }
-    .containergame{margin-left:0px;}
 }
 @media screen and (max-width:530px) {
     .navhead
@@ -42,13 +36,23 @@ nav ul
         font-size: 20px;
     }
 }
-
-
+@media screen and (max-width:357px) {
+    .navhead
+    {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:900px) {
+    .containergame
+    {
+       flex-wrap: wrap;
+       flex-direction: column;
+    }
+}
 @media screen and (max-width:600px) and(min-width:505px) {
     .containergame
     {
        align-content: baseline;
-       
     }
      .nav
     {
@@ -141,22 +145,18 @@ nav ul
     }
     .keyboard
     {
-        width: 100%;  
+      width: 100%;
         scale: 90%;
-    }
-}
-@media screen and (max-width:900px) {
-    .containergame
-    {
-       flex-wrap: wrap;
-       flex-direction: column;
-       width:fit-content;
+        position: relative;
+        left: -30px;
     }
 }
 @media screen and (max-width:444px) and (min-width:425px) {
     .containergame
     {
        align-content: baseline;
+        position: relative;
+        right: 20px;
     }
     .leftdiv
     {
@@ -197,16 +197,18 @@ nav ul
     }
     .keyboard
     {
-       width: 100%;
-        scale: 85%;
+        width: 100%;
+        scale: 80%;
         position: relative;
-        left: -25px;
+        left: -40px;
     }
 }
-@media screen and (max-width:425px) and (min-width:375px) {
+@media screen and (max-width:425px) and (min-width:387px) {
     .containergame
     {
        align-content: baseline;
+       position: relative;
+        right: 20px;
     }
     .leftdiv
     {
@@ -250,13 +252,16 @@ nav ul
          width: 100%;
         scale: 70%;
         position: relative;
-        left: -25px;
+        left: -50px;
     }
     }
-@media screen and (max-width:375px) and (min-width:353px) {
+@media screen and (max-width:387px) and (min-width:353px) {
     .containergame
     {
        align-content: baseline;
+        position: relative;
+        right: 20px;
+
     }
     .leftdiv
     {
@@ -298,16 +303,18 @@ nav ul
     }
     .keyboard
     {
-        width: 100%;
+      width: 100%;
         scale: 65%;
         position: relative;
-        left: -30px;
+        left: -48px;
     }
     }
    @media screen and (max-width:353px) and (min-width:320px) {
     .containergame
     {
        align-content: baseline;
+        position: relative;
+        right: 20px;
     }
     .leftdiv
     {
@@ -349,10 +356,10 @@ nav ul
     }
     .keyboard
     {
-        width: 100%;
-        scale: 50%;
+         width: 100%;
+        scale: 48%;
         position: relative;
-        left: -35px;
+        left: -50px;
     }
     }
     .heading
@@ -431,5 +438,5 @@ nav ul
     border-radius: 5px;
     padding: 5px;
     align-items: center;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }

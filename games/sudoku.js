@@ -235,10 +235,10 @@ ansbtn.addEventListener("click",()=>{
 <div class="box down">${ansboard[8][7]}</div>
 <div class="box down">${ansboard[8][8]}</div>`
 
-    el.classList.add("board","right","down","box");
-    el.style.height="50%";
-    el.style.width ="auto";
-    el.style.aspectRatio="1/1";
+    el.classList.add("board");
+    // el.style.width="30vw";
+    // el.style.height ="auto";
+    // el.style.aspectRatio="1/1";
     el.style.border="3px solid black";
     // el.style.border-right = "0.1px solid black";
     // el.style.border-left =  "3px solid black";
@@ -248,6 +248,5 @@ ansbtn.addEventListener("click",()=>{
     g_class.append(el);
     if(ansbtn.disabled===false){
         ansbtn.disabled=true;
-    }
-    
+    }
 })
